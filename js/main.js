@@ -26,14 +26,6 @@ $(document).ready(() => {
         window.open("https://warsofprasia-event.beanfun.com/EventAD/EventAD?eventAdId=14426", '_blank');
     });
 
-    $('.img2_btn').on('click', () => {
-        window.open("https://warsofprasia-event.beanfun.com/EventAD/EventAD?eventAdId=14426", '_blank');
-    });
-
-    $('.img3_btn').on('click', () => {
-        window.open("https://warsofprasia-event.beanfun.com/EventAD/EventAD?eventAdId=14426", '_blank');
-    });
-
     $('.btn_fixed').on('click', () => {
         window.open("https://warsofprasia-event.beanfun.com/Event/E20250917/Index", '_blank');
     });
@@ -60,7 +52,7 @@ $(document).ready(() => {
         };
     }
 
-    let pcSwiperPage, pcWheelHandler, pcTouchMoveHandler, mobileSwiperPage, bossSwiperPage, soonSwiperPage;
+    let pcSwiperPage, pcWheelHandler, pcTouchMoveHandler, mobileSwiperPage, bossSwiperPage, soonSwiperPage, petSwiperPage;
 
     function pcTouchStart(e) {
         startY = e.touches[0].clientY;
@@ -254,17 +246,28 @@ $(document).ready(() => {
                         })
                     });
 
+                    $('._scroll-button').on('click', () => {
+                        swiper.slideTo(1);
+                    });
+
                     const params = new URL(window.location.href).searchParams;
 
                     if (params.get("redirect") === "1") {
                         setTimeout(() => swiper.slideTo(2));
                     }
 
-                    $('._scroll').on('click', () => {
-                        swiper.slideTo(1);
-                    });
-
                     $('.UNI-footer').css('display', 'none');
+
+                    $('.section--episode ._tab button').on('click', (e) => {
+                        const index = $(e.currentTarget).index();
+                        $('.section--episode ._tab button').removeClass('-active');
+                        $('.section--episode ._tab button')[index].classList.add('-active');
+                        $('.depth--2').removeClass('-active');
+                        $('.depth--2')[index + 1].classList.add('-active');
+                        $('.section--episode ._display ._display-item')[0].style.display = '';
+                        $('.section--episode ._display ._display-item')[1].style.display = '';
+                        $('.section--episode ._display ._display-item')[index === 0 ? 1 : 0].style.display = 'none';
+                    });
                 },
                 slideChange: (swiper) => {
                     $('.gotop').removeClass('show');
@@ -274,7 +277,7 @@ $(document).ready(() => {
                         $('.gotop').addClass('show');
                     }
 
-                    if (swiper.realIndex === 2) {
+                    if (swiper.realIndex === 7) {
                         $('.UNI-footer').css('display', 'block');
                     }
                 },
@@ -292,7 +295,6 @@ $(document).ready(() => {
             freeMode: false,
             noSwiping: false,
             noSwipingSelector: 'button',
-            // nested: true,
             navigation: {
                 nextEl: '.section--soon .swiper-button-next',
                 prevEl: '.section--soon .swiper-button-prev',
@@ -302,7 +304,7 @@ $(document).ready(() => {
             slidesPerView: 1,
             spaceBetween: 0,
             watchSlidesProgress: true,
-            allowTouchMove: false,
+            allowTouchMove: true,
             on: {
                 slideChange: (swiper) => {
                 },
@@ -340,6 +342,32 @@ $(document).ready(() => {
         });
     };
 
+    const petSwiper = () => {
+        petSwiperPage = new Swiper('.section--pet .swiper-container', {
+            touchReleaseOnEdges: true,
+            mousewheel: false,
+            loop: true,
+            freeMode: false,
+            noSwiping: false,
+            noSwipingSelector: 'button',
+            navigation: {
+                nextEl: '.section--pet .swiper-button-next',
+                prevEl: '.section--pet .swiper-button-prev',
+            },
+            autoHeight: true,
+            speed: 1000,
+            slidesPerView: 1,
+            spaceBetween: 0,
+            watchSlidesProgress: true,
+            allowTouchMove: true,
+            on: {
+                slideChange: (swiper) => {
+
+                },
+            }
+        });
+    };
+
     if ($(window).width() > 768) {
         $('.event_gnb').addClass('type_clear');
         $('.event_gnb').removeClass('type_default');
@@ -350,6 +378,7 @@ $(document).ready(() => {
         $('.event_gnb').addClass('type_default');
         $('.fullpage-section').addClass('-disabled');
         mbSwiper();
+        petSwiper();
     }
     bossSwiper();
     soonSwiper();
@@ -400,6 +429,12 @@ $(document).ready(() => {
                 setTimeout(() => mobileSwiperPage.update());
             } else {
                 setTimeout(() => mbSwiper());
+            }
+
+            if (petSwiperPage) {
+                setTimeout(() => petSwiperPage.update());
+            } else {
+                setTimeout(() => petSwiper());
             }
             $('.event_gnb').removeClass('type_clear');
             $('.event_gnb').addClass('type_default');
