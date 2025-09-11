@@ -48,7 +48,7 @@
     }
 
     .section--episode .area__content ._content ._content__wrap ._display ._display-item.type--1 {
-        background-image: url(../img/page8/tabcon_section4_1_m.png);
+        background-image: url(../img/page8/tabcon_section4_1_m.webp);
         background-position: 50% 50%;
         background-repeat: no-repeat;
         background-size: contain;
@@ -61,7 +61,7 @@
     }
 
     .section--episode .area__content ._content ._content__wrap ._display ._display-item.type--2 {
-        background-image: url(../img/page8/tabcon_section4_2_m.png);
+        background-image: url(../img/page8/tabcon_section4_2_m.webp);
         background-position: 50% 50%;
         background-repeat: no-repeat;
         background-size: contain;
@@ -174,7 +174,7 @@
     }
 
     section.section--pet .area__content .mb .block1 {
-        background-image: url(../img/page2/m_02_block01.png);
+        background-image: url(../img/page2/m_02_block01.webp);
         background-position: 50% 50%;
         background-repeat: no-repeat;
         background-size: contain;
@@ -245,7 +245,7 @@
     }
 
     section.section--pet .area__content .mb .block2 .img1 {
-        background-image: url(../img/page2/m_02_block03-1.png);
+        background-image: url(../img/page2/m_02_block03-1.webp);
         background-position: 50% 50%;
         background-repeat: no-repeat;
         background-size: contain;
@@ -255,7 +255,7 @@
     }
 
     section.section--pet .area__content .mb .block2 .img2 {
-        background-image: url(../img/page2/m_02_block03-2.png);
+        background-image: url(../img/page2/m_02_block03-2.webp);
         background-position: 50% 50%;
         background-repeat: no-repeat;
         background-size: contain;
@@ -265,7 +265,7 @@
     }
 
     section.section--pet .area__content .mb .block2 .img3 {
-        background-image: url(../img/page2/m_02_block03-3.png);
+        background-image: url(../img/page2/m_02_block03-3.webp);
         background-position: 50% 50%;
         background-repeat: no-repeat;
         background-size: contain;
@@ -275,7 +275,7 @@
     }
 
     section.section--dungeon .area__visual {
-        background-image: url(../img/page5/m_05_bg.png);
+        background-image: url(../img/page5/m_05_bg.webp);
         background-position: 50% 50%;
         background-repeat: no-repeat;
         background-size: cover;
@@ -283,7 +283,7 @@
     }
 
     section.section--dungeon .area__content ._header ._content-title {
-        background-image: url(../img/page5/title_section1_m.png);
+        background-image: url(../img/page5/title_section1_m.webp);
         background-position: 50% 50%;
         background-repeat: no-repeat;
         background-size: contain;
@@ -317,7 +317,7 @@
     }
 
     .section--boss .area__visual {
-        background-image: url(../img/page6/bg_section2.jpg);
+        background-image: url(../img/page6/m_06_bg.webp);
         background-position: 50% 50%;
         background-repeat: no-repeat;
         background-size: cover
@@ -385,14 +385,14 @@
     }
 
     .section--episode .area__visual {
-        background-image: url(../img/page8/bg_section3.jpg);
+        background-image: url(../img/page8/bg_section3.webp);
         background-position: 50% 50%;
         background-repeat: no-repeat;
         background-size: cover
     }
 
     .section--episode .area__content ._header ._content-title {
-        /* background-image: url(../img/page8/title_section3_m.png); */
+        background-image: url(../img/page8/m_title_section3.webp);
         background-position: 50% 50%;
         background-repeat: no-repeat;
         background-size: contain;
@@ -440,7 +440,7 @@
     }
 
     .section--episode .area__content ._content ._content__wrap ._display ._display-item.type--1 {
-        background-image: url(../img/page8/tabcon_section4_1_m.png);
+        background-image: url(../img/page8/tabcon_section4_1_m.webp);
         background-repeat: no-repeat;
         background-size: contain;
     }
@@ -450,7 +450,7 @@
     }
 
     .section--episode .area__content ._content ._content__wrap ._display ._display-item.type--2 {
-        background-image: url(../img/page8/tabcon_section4_2_m.png);
+        background-image: url(../img/page8/tabcon_section4_2_m.webp);
         background-repeat: no-repeat;
         background-size: contain;
         padding-bottom: 4.9627791563vw;
@@ -475,7 +475,7 @@
     }
 
     .section--pet .area__visual {
-        background-image: url(../img/page2/02_bg.png);
+        background-image: url(../img/page2/02_bg.webp);
         background-position: 50% 50%;
         background-repeat: no-repeat;
         background-size: cover
@@ -484,11 +484,11 @@
     .section--world .area__content ._header ._content-title {
         aspect-ratio: 489 / 181;
         height: 135.75px;
-        background-image: url(../img/page3/m_03_title.png);
+        background-image: url(../img/page3/m_03_title.webp);
     }
 
     .section--world .area__content ._content {
-        background-image: url(../img/page3/m_03_block.png);
+        background-image: url(../img/page3/m_03_block.webp);
         background-position: 50% 50%;
         background-repeat: no-repeat;
         background-size: contain;
@@ -509,7 +509,7 @@
     }
 
     .section--new .area__content ._content {
-        background-image: url(../img/page7/m_07_block.png);
+        background-image: url(../img/page7/m_07_block.webp);
         background-position: 50% 50%;
         background-repeat: no-repeat;
         background-size: contain;
@@ -518,7 +518,7 @@
     }
 
     .section--soon ._content .img1 {
-        background-image: url(../img/page4/m_04_block01.png);
+        background-image: url(../img/page4/m_04_block01.webp);
         background-position: 50% 50%;
         background-repeat: no-repeat;
         background-size: contain;
@@ -533,7 +533,7 @@
     }
 
     .section--soon ._content .img2 {
-        background-image: url(../img/page4/m_04_block02.png);
+        background-image: url(../img/page4/m_04_block02.webp);
         background-position: 50% 50%;
         background-repeat: no-repeat;
         background-size: contain;
@@ -542,7 +542,7 @@
     }
 
     .section--soon ._content .img3 {
-        background-image: url(../img/page4/m_04_block03.png);
+        background-image: url(../img/page4/m_04_block03.webp);
         background-position: 50% 50%;
         background-repeat: no-repeat;
         background-size: contain;
