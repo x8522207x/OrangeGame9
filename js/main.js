@@ -330,7 +330,7 @@ $(document).ready(() => {
             slidesPerView: 1,
             spaceBetween: 0,
             watchSlidesProgress: true,
-            allowTouchMove: false,
+            allowTouchMove: true,
             on: {
                 slideChange: (swiper) => {
                     $('.imageSlide').removeClass('show1');
