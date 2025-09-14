@@ -23,6 +23,10 @@
         height: 419.6875px;
         width: 750px;
     }
+
+    .section--world .area__content ._content {
+        width: 698px;
+    }
 }
 
 @media screen and (min-width: 769px) and (max-height: 1280px) {
@@ -457,7 +461,7 @@
     }
 
     .section--episode .area__content ._content ._content__wrap ._display ._display-item.type--2 ._detail-link {
-        bottom: 66.9975186104vw
+        bottom: 51.997519vw;
     }
 
     .section--pet .area__content .pc {
@@ -492,9 +496,9 @@
         background-position: 50% 50%;
         background-repeat: no-repeat;
         background-size: contain;
-        width: 360px;
+        width: 362px;
         margin-top: 16px;
-        aspect-ratio: 720 / 1945;
+        aspect-ratio: 362 / 1247;
         position: relative
     }
 

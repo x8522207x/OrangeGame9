@@ -313,6 +313,15 @@ section.area {
     section.section--episode {
         min-height: max(1500px, 100vh);
     }
+
+    section.section--boss,
+    section.section--soon {
+        min-height: max(900px, 100vh);
+    }
+
+    section.section--world {
+        min-height: max(700px, 100vh);
+    }
 }
 
 section.area .area__visual ._dimmed {
@@ -969,10 +978,9 @@ section.section--dungeon .area__content ._content .character {
 @media (min-width: 769px) {
     .section--episode .area__content ._content ._content__wrap ._display ._display-item.type--2 {
         background-image: url(../img/page8/tabcon_section4_2.webp);
-        background-position: 59% 0;
+        background-position: 50% 0;
         background-repeat: no-repeat;
         background-size: auto 100%;
-        margin-top: -46px;
     }
 }
 
@@ -1040,9 +1048,11 @@ section.section--dungeon .area__content ._content .character {
     background-position: 50% 50%;
     background-repeat: no-repeat;
     background-size: contain;
-    aspect-ratio: 1200/763;
-    width: 900px;
-    margin-top: 30px;
+    aspect-ratio: 1396 / 535;
+    width: 1047px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
 }
 
 .section--world .area__content ._content .detail_btn {
@@ -1052,9 +1062,7 @@ section.section--dungeon .area__content ._content .character {
     background-size: contain;
     aspect-ratio: 279/79;
     width: 279px;
-    position: relative;
-    left: 286.5px;
-    top: 480px;
+    margin-bottom: -100px;
 }
 
 .section--world .area__content ._content .detail_btn:hover {
@@ -1113,8 +1121,8 @@ section.section--dungeon .area__content ._content .character {
     aspect-ratio: 691/230;
     width: 207.3px;
     position: relative;
-    left: 255.145px;
-    top: 695px;
+    left: 251.145px;
+    top: 700px;
 }
 
 .section--soon ._content .img1 .img1_btn:hover {
