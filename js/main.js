@@ -30,6 +30,10 @@ $(document).ready(() => {
         window.open("https://warsofprasia-event.beanfun.com/Event/E20250917/Index", '_blank');
     });
 
+    $('.view_btn').on('click', () => {
+        window.open("https://www.youtube.com/@user-warsofprasia", '_blank');
+    });
+
     $('.modal_close').on('click', () => {
         $('.plate_modal').toggleClass('-active');
         $('.modal.type--youtube').toggleClass('hide');
